@@ -1,0 +1,894 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DMG - Admin Panel</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/" />
+
+    <!-- Library / Plugin Css Build -->
+    <link rel="stylesheet" href="../assets/css/core/libs.min.css">
+    <link href="aos/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../assets/css/aprycot.min.css?v=1.0.0">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link herf="../assets/css/form.scss">
+
+</head>
+
+<body style="background:url(../assets/images/dashboard.png);    background-attachment: fixed;
+    background-size: cover;">
+    <div class="position-relative">
+        <div class="user-img1">
+            <svg width="1857" viewBox="0 0 1857 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4.05078 189.348C86.8841 109.514 348.951 -25.2523 734.551 74.3477C1120.15 173.948 1641.22 91.181 1853.55 37.3477"
+                    stroke="#EA6A12" stroke-opacity="0.3" />
+                <path
+                    d="M0.99839 152.331C90.9502 80.6133 364.495 -28.9952 739.062 106.31C1113.63 241.616 1640.16 208.056 1856.6 174.363"
+                    stroke="#EA6A12" stroke-opacity="0.3" />
+            </svg>
+        </div>
+    </div>
+
+    <aside class="sidebar sidebar-default sidebar-hover sidebar-mini navs-pill-all ">
+        <div class="sidebar-header d-flex align-items-center justify-content-start">
+            <a href="#" class="navbar-brand">DMG
+                <!--Logo start-->
+                <div class="logo">
+
+                </div>
+                <!--logo End-->
+
+            </a>
+            <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
+                <i class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </i>
+            </div>
+        </div>
+        <div class="sidebar-body pt-0 data-scrollbar">
+            <div class=" navbar-collapse" id="sidebar">
+                <!-- Sidebar Menu Start -->
+                <ul class="navbar-nav iq-main-menu">
+                    <li class="nav-item static-item">
+                        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                            <span class="default-icon">Home</span>
+                            <span class="mini-icon">-</span>
+                        </a>
+                    </li>
+                    <li class="nav-item sub-nav">
+                        <a class="nav-link active" aria-current="page" href="../dashboard/index.html">
+                            <i class="icon">
+                                <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4"
+                                        d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z"
+                                        fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </i>
+                            <span class="item-name">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="hr-horizontal">
+                    </li>
+                    <li class="nav-item static-item">
+                        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                            <span class="default-icon">Pages</span>
+                            <span class="mini-icon">-</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-user" role="button"
+                            aria-expanded="false" aria-controls="sidebar-user">
+                            <i class="icon">
+                                <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9488 14.54C8.49884 14.54 5.58789 15.1038 5.58789 17.2795C5.58789 19.4562 8.51765 20.0001 11.9488 20.0001C15.3988 20.0001 18.3098 19.4364 18.3098 17.2606C18.3098 15.084 15.38 14.54 11.9488 14.54Z"
+                                        fill="currentColor"></path>
+                                    <path opacity="0.4"
+                                        d="M11.949 12.467C14.2851 12.467 16.1583 10.5831 16.1583 8.23351C16.1583 5.88306 14.2851 4 11.949 4C9.61293 4 7.73975 5.88306 7.73975 8.23351C7.73975 10.5831 9.61293 12.467 11.949 12.467Z"
+                                        fill="currentColor"></path>
+                                    <path opacity="0.4"
+                                        d="M21.0881 9.21923C21.6925 6.84176 19.9205 4.70654 17.664 4.70654C17.4187 4.70654 17.1841 4.73356 16.9549 4.77949C16.9244 4.78669 16.8904 4.802 16.8725 4.82902C16.8519 4.86324 16.8671 4.90917 16.8895 4.93889C17.5673 5.89528 17.9568 7.0597 17.9568 8.30967C17.9568 9.50741 17.5996 10.6241 16.9728 11.5508C16.9083 11.6462 16.9656 11.775 17.0793 11.7948C17.2369 11.8227 17.3981 11.8371 17.5629 11.8416C19.2059 11.8849 20.6807 10.8213 21.0881 9.21923Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M22.8094 14.817C22.5086 14.1722 21.7824 13.73 20.6783 13.513C20.1572 13.3851 18.747 13.205 17.4352 13.2293C17.4155 13.232 17.4048 13.2455 17.403 13.2545C17.4003 13.2671 17.4057 13.2887 17.4316 13.3022C18.0378 13.6039 20.3811 14.916 20.0865 17.6834C20.074 17.8032 20.1698 17.9068 20.2888 17.8888C20.8655 17.8059 22.3492 17.4853 22.8094 16.4866C23.0637 15.9589 23.0637 15.3456 22.8094 14.817Z"
+                                        fill="currentColor"></path>
+                                    <path opacity="0.4"
+                                        d="M7.04459 4.77973C6.81626 4.7329 6.58077 4.70679 6.33543 4.70679C4.07901 4.70679 2.30701 6.84201 2.9123 9.21947C3.31882 10.8216 4.79355 11.8851 6.43661 11.8419C6.60136 11.8374 6.76343 11.8221 6.92013 11.7951C7.03384 11.7753 7.09115 11.6465 7.02668 11.551C6.3999 10.6234 6.04263 9.50765 6.04263 8.30991C6.04263 7.05904 6.43303 5.89462 7.11085 4.93913C7.13234 4.90941 7.14845 4.86348 7.12696 4.82926C7.10906 4.80135 7.07593 4.78694 7.04459 4.77973Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M3.32156 13.5127C2.21752 13.7297 1.49225 14.1719 1.19139 14.8167C0.936203 15.3453 0.936203 15.9586 1.19139 16.4872C1.65163 17.4851 3.13531 17.8066 3.71195 17.8885C3.83104 17.9065 3.92595 17.8038 3.91342 17.6832C3.61883 14.9167 5.9621 13.6046 6.56918 13.3029C6.59425 13.2885 6.59962 13.2677 6.59694 13.2542C6.59515 13.2452 6.5853 13.2317 6.5656 13.2299C5.25294 13.2047 3.84358 13.3848 3.32156 13.5127Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </i>
+                            <span class="item-name">Users</span>
+                            <i class="right-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </i>
+                        </a>
+                        <ul class="sub-nav collapse" id="sidebar-user" data-bs-parent="#sidebar">
+                            <li class="nav-item">
+                                <a class="nav-link " href="../dashboard/app/user-profile.html">
+                                    <i class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24"
+                                            fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <i class="sidenav-mini-icon"> U </i>
+                                    <span class="item-name">User Profile</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <!-- Sidebar Menu End -->
+            </div>
+        </div>
+        <!-- <div class="sidebar-footer"></div> -->
+    </aside>
+    <main class="main-content">
+        <div class="position-relative">
+            <!--Nav Start-->
+            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar">
+                <div class="container-fluid navbar-inner">
+                    <a href="../dashboard/index.html" class="navbar-brand">DMG
+                        <!--logo End-->
+
+                    </a>
+                    <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
+                        <i class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+                            </svg>
+                        </i>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <span class="navbar-toggler-bar bar1 mt-2"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto align-items-center navbar-list mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link" id="notification-drop" data-bs-toggle="dropdown">
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7695 10.1453C16.039 9.29229 15.7071 8.55305 15.7071 7.29716V6.87013C15.7071 5.23354 15.3304 4.17907 14.5115 3.12459C13.2493 1.48699 11.1244 0.5 9.04423 0.5H8.95577C6.91935 0.5 4.86106 1.44167 3.577 3.0128C2.71333 4.08842 2.29293 5.18822 2.29293 6.87013V7.29716C2.29293 8.55305 1.98284 9.29229 1.23049 10.1453C0.676907 10.7738 0.5 11.5815 0.5 12.4557C0.5 13.3309 0.787226 14.1598 1.36367 14.8336C2.11602 15.6413 3.17846 16.1569 4.26375 16.2466C5.83505 16.4258 7.40634 16.4933 9.0005 16.4933C10.5937 16.4933 12.165 16.3805 13.7372 16.2466C14.8215 16.1569 15.884 15.6413 16.6363 14.8336C17.2118 14.1598 17.5 13.3309 17.5 12.4557C17.5 11.5815 17.3231 10.7738 16.7695 10.1453Z"
+                                            fill="currentColor" />
+                                        <path opacity="0.4"
+                                            d="M11.0097 17.7285C10.5098 17.6217 7.46364 17.6217 6.96372 17.7285C6.53636 17.8272 6.07422 18.0568 6.07422 18.5604C6.09907 19.0408 6.38033 19.4648 6.76992 19.7337L6.76893 19.7347C7.27282 20.1275 7.86416 20.3773 8.48334 20.4669C8.8133 20.5122 9.14923 20.5102 9.49111 20.4669C10.1093 20.3773 10.7006 20.1275 11.2045 19.7347L11.2035 19.7337C11.5931 19.4648 11.8744 19.0408 11.8992 18.5604C11.8992 18.0568 11.4371 17.8272 11.0097 17.7285Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <span class="bg-danger dots"></span>
+                                </a>
+                                <div class="sub-drop dropdown-menu dropdown-menu-end p-0"
+                                    aria-labelledby="notification-drop">
+                                    <div class="card shadow-none m-0">
+                                        <div class="card-header d-flex justify-content-between bg-primary mx-0 px-4">
+                                            <div class="header-title">
+                                                <h5 class="mb-0 text-white">All Notifications</h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <a href="#" class="iq-sub-card">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar-40 rounded-pill"
+                                                        src="../assets/images/layouts/01.png" alt="">
+                                                    <div class="ms-3 w-100">
+                                                        <h6 class="mb-0 ">Table -5</h6>
+                                                        <h6 class="mb-0 ">New Order Received</h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-0">Price : ₹300</p>
+                                                            <small class="float-end font-size-12">Just Now</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link py-0 d-flex align-items-center" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/images/1.png" alt="User-Profile"
+                                        class="img-fluid avatar avatar-50 avatar-rounded">
+                                    <div class="caption ms-3 d-none d-md-block ">
+                                        <h6 class="mb-0 caption-title">Aravind</h6>
+                                        <p class="mb-0 caption-sub-title">Admin</p>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../dashboard/app/user-profile.html">Profile</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="../dashboard/auth/sign-in.html">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+            <!-- Nav Header Component End -->
+            <!--Nav End-->
+        </div>
+        <div class="content-inner mt-5 py-0">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="card ">
+                        <div class="hero-image p-3"
+                            style="background: url('../assets/images/layouts/01.png') no-repeat center right;background-size: cover;background-position: center;">
+                            <div class="card-body p-5">
+                                <div class="row banner-container">
+                                    <div class="col-lg-8 banner-item">
+                                        <div class="banner-text pt-3">
+                                            <h1 class="fw-bold mb-4">
+                                                Hello, Aravind
+                                            </h1>
+                                        </div>
+                                        <button type="button" class="btn btn-primary rounded-pill">Check Menu</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent mb-0">
+                        <div class="card-header border-0  ">
+                            <div class="d-flex justify-content-center">
+                                <h3 class="heading-title">Menu category</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-xl-12 col-lg-12 dish-card-horizontal mt-2">
+                                <div class="row">
+                                    <ul class="nav nav-tabs d-flex justify-content-center">
+                                        <li class="nav-item" onclick="manageCategory('Starters')">
+                                            <div class="col nav-link active show" data-bs-toggle="tab"
+                                                data-bs-target="#menu-starters">
+                                                <div class="card card-white ">
+                                                    <div class="profile-img21">
+                                                        <img src="../assets/images/menu/menu-item-1.png"
+                                                            class="img-fluid rounded-pill avatar-170 "
+                                                            alt="Starters-image">
+                                                    </div>
+                                                    <div class="card-body menu-image">
+                                                        <h6 class="heading-title fw-bolder mt-4 mb-0 text-center">
+                                                            Starters
+                                                        </h6>
+                                                        <br>
+                                                        <div class="d-flex justify-content-center">
+                                                            <a data-target="#loginmodal" data-toggle="modal"><i
+                                                                    class="fa fa-plus-circle fa-2x"
+                                                                    aria-hidden="true"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item" onclick="manageCategory('soups')">
+                                            <div class="col nav-link" data-bs-toggle="tab"
+                                                data-bs-target="#menu-breakfast">
+                                                <div class="card card-white ">
+                                                    <div class="profile-img21">
+                                                        <img src="../assets/images/menu/soup.webp"
+                                                            class="img-fluid rounded-pill avatar-170 "
+                                                            alt="Soups-image">
+                                                    </div>
+                                                    <div class="card-body menu-image">
+                                                        <h6 class="heading-title fw-bolder mt-4 mb-0 text-center">Soups
+                                                        </h6>
+                                                        <br>
+                                                        <div class="d-flex justify-content-center">
+                                                            <a data-target="#loginmodal" data-toggle="modal"><i
+                                                                    class="fa fa-plus-circle fa-2x"
+                                                                    aria-hidden="true"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item" onclick="manageCategory('lunch')">
+                                            <div class="col nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+                                                <div class="card card-white ">
+                                                    <div class="profile-img21">
+                                                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xj1ln56v1knzjmxwbays"
+                                                            class="img-fluid rounded-pill avatar-170 "
+                                                            alt="profile-image">
+                                                    </div>
+                                                    <div class="card-body menu-image">
+                                                        <h6 class="heading-title fw-bolder mt-4 mb-0 text-center">
+                                                            Main-Course</h6>
+                                                        <br>
+                                                        <div class="d-flex justify-content-center">
+                                                            <a data-target="#loginmodal" data-toggle="modal"><i
+                                                                    class="fa fa-plus-circle fa-primary fa-2x"
+                                                                    aria-hidden="true"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item" onclick="manageCategory('dessert')">
+                                            <div class="col nav-link" data-bs-toggle="tab"
+                                                data-bs-target="#menu-dinner">
+                                                <div class="card card-white">
+                                                    <div class="profile-img21">
+                                                        <img src="../assets/images/menu/dinner.jpg"
+                                                            class="img-fluid rounded-pill avatar-170 "
+                                                            alt="profile-image">
+                                                    </div>
+                                                    <div class="card-body menu-image">
+                                                        <h6 class="heading-title fw-bolder mt-4 mb-0 text-center">
+                                                            Desserts</h6>
+                                                        <br>
+                                                        <div class="d-flex justify-content-center">
+                                                            <a data-target="#loginmodal" data-toggle="modal"><i
+                                                                    class="fa fa-plus-circle fa-2x"
+                                                                    aria-hidden="true"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content iq-glass-card rounded bg-white">
+
+                        <div class="tab-pane fade active show" id="menu-starters">
+
+                            <div class="tab-header text-center">
+                                <p>Menu</p>
+                                <h3 class="heading-title fw-bolder">Starters</h3>
+                                <br>
+                            </div>
+
+                            <div class="row gy-5 m-3 text-center" id="starters-row">
+                            </div>
+                        </div><!-- End Starter Menu Content -->
+
+                        <div class="tab-pane fade" id="menu-breakfast">
+
+                            <div class="tab-header text-center">
+                                <p>Menu</p>
+                                <h3 class="heading-title fw-bolder">Soups</h3>
+                                <br>
+                            </div>
+
+                            <div class="row gy-5 m-3 text-center" id="breakfast-row">
+
+                            </div>
+                        </div><!-- End Breakfast Menu Content -->
+
+                        <div class="tab-pane fade" id="menu-lunch">
+
+                            <div class="tab-header text-center">
+                                <p>Menu</p>
+                                <h3 class="heading-title fw-bolder">Main-Course</h3>
+                                <br>
+                            </div>
+
+                            <div class="row gy-5 m-3 text-center" id="lunch-row">
+
+                            </div>
+                        </div><!-- End Lunch Menu Content -->
+
+                        <div class="tab-pane fade" id="menu-dinner">
+
+                            <div class="tab-header text-center">
+                                <p>Menu</p>
+                                <h3 class="heading-title fw-bolder">Desserts</h3>
+                            </div>
+
+                            <div class="row gy-5 m-3 text-center" id="dinner-row">
+                            </div>
+                        </div><!-- End Dinner Menu Content -->
+                        <br>
+                    </div>
+
+                    <br>
+                    <br>
+                    <hr class="bg-primary my-4">
+                    <hr class="bg-primary my-4">
+                    <div class="card-transparent mb-0">
+                        <div class="card-header border-0 m-2 mb-5">
+                            <div class="d-flex justify-content-center">
+                                <h3 class="heading-title fw-bold">Trending orders</h3>
+                                <!-- <a href="#" class="text-dark">View All
+                                    <svg width="24" height="24" class="ms-1" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="12" fill="#EA6A12" />
+                                        <path d="M10.25 8.5L13.75 12L10.25 15.5" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a> -->
+                            </div>
+                        </div>
+                        <div class="card-body p-0 dish-card-vertical">
+                            <div class="swiper swiper-container d-slider3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card card-white dish-card2 index">
+                                            <div class="card-body ">
+                                                <div class="d-flex profile-img1">
+                                                    <div class="profile-img31">
+                                                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xj1ln56v1knzjmxwbays"
+                                                            class="img-fluid rounded-pill avatar-130 "
+                                                            alt="profile-image">
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-primary">
+                                                            <small>Top of the day</small>
+                                                        </span>
+                                                        <h6 class="mb-1 mt-3 heading-title fw-bolder">Chicken Biryani
+                                                        </h6>
+                                                        <p class="mt-2 mb-0 pb-4 iq-calories">200 Calories</p>
+                                                        <p>2 persons</p>
+                                                        <div class="d-flex mt-2">
+                                                            <span class="text-primary me-4">₹ 250</span>
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xj1ln56v1knzjmxwbays">
+                                                                <rect width="24" height="24" rx="12" fill="#EA6A12" />
+                                                                <rect x="11.168" y="7" width="1.66667" height="10"
+                                                                    rx="0.833333" fill="white" />
+                                                                <rect x="7" y="12.834" width="1.66666" height="10"
+                                                                    rx="0.833332" transform="rotate(-90 7 12.834)"
+                                                                    fill="white" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card card-white dish-card2 index">
+                                            <div class="card-body ">
+                                                <div class="d-flex profile-img1">
+                                                    <div class="profile-img31">
+                                                        <img src="../assets/images/layouts/19.png"
+                                                            class="img-fluid rounded-pill avatar-130 blur-shadow position-start"
+                                                            alt="profile-image">
+                                                        <img src="../assets/images/layouts/19.png"
+                                                            class="img-fluid rounded-pill avatar-130 "
+                                                            alt="profile-image">
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-primary">
+                                                            <small>Top of the week</small>
+                                                        </span>
+                                                        <h6 class="mb-1 mt-3 heading-title fw-bolder">Italian Salad</h6>
+                                                        <p class="mt-2 mb-0 pb-4 iq-calories">60 Calories</p>
+                                                        <p>4 persons</p>
+                                                        <div class="d-flex mt-2">
+                                                            <span class="text-primary me-4">₹ 200</span>
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" rx="12" fill="#EA6A12" />
+                                                                <rect x="11.168" y="7" width="1.66667" height="10"
+                                                                    rx="0.833333" fill="white" />
+                                                                <rect x="7" y="12.834" width="1.66666" height="10"
+                                                                    rx="0.833332" transform="rotate(-90 7 12.834)"
+                                                                    fill="white" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card-white dish-card2 index">
+                                            <div class="card-body ">
+                                                <div class="d-flex profile-img1">
+                                                    <div class="profile-img31">
+                                                        <img src="../assets/images/layouts/14.png"
+                                                            class="img-fluid rounded-pill avatar-130 blur-shadow position-start"
+                                                            alt="profile-image">
+                                                        <img src="../assets/images/layouts/14.png"
+                                                            class="img-fluid rounded-pill avatar-130 "
+                                                            alt="profile-image">
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-primary">
+                                                            <small>Top of the month</small>
+                                                        </span>
+                                                        <h6 class="mb-1 mt-3 heading-title fw-bolder">Italian Salad</h6>
+                                                        <p class="mt-2 mb-0 pb-4 iq-calories">60 Calories</p>
+                                                        <p>4 persons</p>
+                                                        <div class="d-flex mt-2">
+                                                            <span class="text-primary me-4">₹ 200</span>
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" rx="12" fill="#EA6A12" />
+                                                                <rect x="11.168" y="7" width="1.66667" height="10"
+                                                                    rx="0.833333" fill="white" />
+                                                                <rect x="7" y="12.834" width="1.66666" height="10"
+                                                                    rx="0.833332" transform="rotate(-90 7 12.834)"
+                                                                    fill="white" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card card-white dish-card2">
+                                            <div class="card-body ">
+                                                <div class="d-flex profile-img1">
+                                                    <div class="profile-img31">
+                                                        <img src="../assets/images/layouts/20.png"
+                                                            class="img-fluid rounded-pill avatar-130 blur-shadow position-start"
+                                                            alt="profile-image">
+                                                        <img src="../assets/images/layouts/20.png"
+                                                            class="img-fluid rounded-pill avatar-130 "
+                                                            alt="profile-image">
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-primary">
+                                                            <small>Top of the year</small>
+                                                        </span>
+                                                        <h6 class="mb-1 mt-3 heading-title fw-bolder">Italian Salad</h6>
+                                                        <p class="mt-2 mb-0 pb-4 iq-calories">60 Calories</p>
+                                                        <p>4 persons</p>
+                                                        <div class="d-flex mt-2">
+                                                            <span class="text-primary me-4">₹ 200</span>
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" rx="12" fill="#EA6A12" />
+                                                                <rect x="11.168" y="7" width="1.66667" height="10"
+                                                                    rx="0.833333" fill="white" />
+                                                                <rect x="7" y="12.834" width="1.66666" height="10"
+                                                                    rx="0.833332" transform="rotate(-90 7 12.834)"
+                                                                    fill="white" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 mt-5">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card  profile-img3 ">
+                                <div class="card-body">
+                                    <div class="text-center profile-img51">
+                                        <div class="profile-img41 ">
+                                            <img src="../assets/images/layouts/8.png" class="img-fluid rounded-pill "
+                                                alt="profile-image">
+                                        </div>
+                                        <div class="profile-img51 ">
+                                            <h2 class="mb-2 profile-img55">50 % off </h2>
+                                            <p class="mb-0">The full price of burgers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card iq-glass-card rounded border border-white">
+                                <div class="card-header bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center list-main">
+                                        <h4>Categories</h4>
+                                        <div class="d-flex">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body bg-white  ">
+                                    <div class="iq-col-masonry m-0" id="hidden_menu">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="position-relative">
+                                <img src="../assets/images/layouts/40.png" alt="img-1" class="img-fluid img-user">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-12">
+                    <div class="modal" data-keyboard="false" data-backdrop="static" id="loginmodal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Add Items</h4>
+                                    <button class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body" style="color:black">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="inputUserName">Item Name</label>
+                                            <input type="text" class="form-control" id="menuItemName"
+                                                placeholder="Item Name" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword">Price</label>
+                                            <input type="number" class="form-control" id="menuItemPrice"
+                                                placeholder="Item Price" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="category">Category</label>
+                                            <input type="text" class="form-control" id="menuItemCategory"
+                                                placeholder="Item Category"
+                                                accept="image/png, image/jpg, image/jpeg, image/webp" required readonly/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Item image File</label>
+                                            <input type="file" id="menuItemImage" accept="image/*" class="form-control"
+                                                required />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" type="submit"
+                                        onclick="addMemuItem(document.getElementsByClassName('form-control')[0], document.getElementsByClassName('form-control')[1], document.getElementsByClassName('form-control')[2], document.getElementsByClassName('form-control')[3])">Add
+                                        Item</button>
+                                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <!-- Required Library Bundle Script -->
+    <script src="../assets/js/core/libs.min.js"></script>
+    <script src="aos/aos.js"></script>
+
+    <!-- External Library Bundle Script -->
+    <script src="../assets/js/core/external.min.js"></script>
+
+    <!-- Mapchart JavaScript -->
+    <script src="../assets/js/charts/dashboard.js"></script>
+
+    <!-- fslightbox JavaScript -->
+    <script src="../assets/js/fslightbox.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!-- app JavaScript -->
+    <script src="../assets/js/app.js"></script>
+
+    <!-- moment JavaScript -->
+    <script src="../assets/vendor/moment.min.js"></script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics --(f)>
+      <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+      Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-storage.js"></script>
+    <script>
+        function clicked(category) {
+            alert(category);
+        }
+
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCs8GhWqtz2F5Y5kmyivvca6oRZ8TlPss8",
+            authDomain: "dmgv1-46c19.firebaseapp.com",
+            projectId: "dmgv1-46c19",
+            storageBucket: "dmgv1-46c19.appspot.com",
+            messagingSenderId: "713057400438",
+            appId: "1:713057400438:web:54d6269561ab92c436d157",
+            measurementId: "G-3QL0L5WQ73"
+        };
+
+        let category = 'starters'
+
+        function manageCategory(categoryData) {
+            const hidden_menu = document.getElementById('hidden_menu')
+            hidden_menu.innerHTML = '';
+            category = categoryData
+            document.getElementById('menuItemCategory').value = category
+            db.collection('menu').where('category', '==', categoryData).get()
+                .then((querySnapshot) => {
+                    querySnapshot.docs.map((doc) => {
+                        if (doc.data().visibility == 'hidden') {
+                            hidden_menu.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+                    <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4 class="text-center">${doc.data().Name}</h4>   
+                        <p class="text-center fw-bold" style="color:black;">
+                          ₹ ${doc.data().price}/-
+                        </p>
+                        <button class="btn bg-transparent text-center" id="${doc.id}" data-id="Starters-item-1"
+                      data-name="${doc.data().Name}" data-price="${doc.data().price}" data-image="assets/img/menu/menu-item-1.png">
+                      <i class="fa fa-eye fa-2x" style="color:black" onclick="showItem(${doc.id})"></i></button>
+                      <i class="fa fa-trash fa-2x" style="color:red" onclick="deleteMenuItem(${doc.id})"></i></button>
+                      </div>`
+                        }
+                    })
+                })
+        }
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+        const starterstab = document.getElementById('starters-row')
+        const breakfasttab = document.getElementById('breakfast-row')
+        const lunchtab = document.getElementById('lunch-row')
+        const dinnerstab = document.getElementById('dinner-row')
+        db.collection('menu').where('category', '==', 'Starters').get()
+            .then((querySnapshot) => {
+                const starters = querySnapshot.docs.map((doc) => {
+                    if (doc.data().visibility == 'visible') {
+                        starterstab.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+                    <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4 class="text-center">${doc.data().Name}</h4>   
+                        <p class="text-center fw-bold" style="color:black;">
+                          ₹ ${doc.data().price}/-
+                        </p>
+                        <button class="btn bg-transparent text-center" id="${doc.id}" data-id="Starters-item-1"
+                      data-name="${doc.data().Name}" data-price="${doc.data().price}" data-image="assets/img/menu/menu-item-1.png">
+                      <i class="fa fa-eye-slash fa-2x" style="color:black" onclick="updateItem(${doc.id})"></i></button>
+                      </div>`
+                    }
+                })
+            })
+        db.collection('menu').where('category', '==', 'soups').get()
+            .then((querySnapshot) => {
+                const soups = querySnapshot.docs.map((doc) => {
+                    if (doc.data().visibility == 'visible') {
+                        breakfasttab.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+                    <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4 class="text-center">${doc.data().Name}</h4>
+                        <p class="text-center fw-bold" style="color:black;">
+                          ₹ ${doc.data().price}/-
+                        </p>
+                        <button class="btn bg-transparent text-center" id="${doc.id}" data-id="Starters-item-1"
+                      data-name="${doc.data().Name}" data-price="${doc.data().price}" data-image="assets/img/menu/menu-item-1.png">
+                      <i class="fa fa-eye-slash fa-2x" style="color:black" onclick="updateItem(${doc.id})"></i></button>
+                      </div>`
+                    }
+                })
+            })
+        db.collection('menu').where('category', '==', 'lunch').get()
+            .then((querySnapshot) => {
+                const main = querySnapshot.docs.map((doc) => {
+                    if (doc.data().visibility == 'visible') {
+                        lunchtab.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+                    <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4 class="text-center">${doc.data().Name}</h4>
+                        <p class="text-center fw-bold" style="color:black;">
+                          ₹ ${doc.data().price}/-
+                        </p>
+                        <button class="btn bg-transparent text-center" id="${doc.id}" data-id="Starters-item-1"
+                      data-name="${doc.data().Name}" data-price="${doc.data().price}" data-image="assets/img/menu/menu-item-1.png">
+                      <i class="fa fa-eye-slash fa-2x" style="color:black" onclick="updateItem(${doc.id})"></i></button>
+                      </div>`
+                    }
+                })
+            })
+        db.collection('menu').where('category', '==', 'dessert').get()
+            .then((querySnapshot) => {
+                const dessert = querySnapshot.docs.map((doc) => {
+                    if (doc.data().visibility == 'visible') {
+                        dinnerstab.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+                    <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4 class="text-center">${doc.data().Name}</h4>
+                        <p class="text-center fw-bold" style="color:black;">
+                          ₹ ${doc.data().price}/-
+                        </p>
+                        <button class="btn bg-transparent text-center" id="${doc.id}" data-id="Starters-item-1"
+                      data-name="${doc.data().Name}" data-price="${doc.data().price}" data-image="assets/img/menu/menu-item-1.png">
+                      <i class="fa fa-eye-slash fa-2x" style="color:black" onclick="updateItem(${doc.id})"></i></button>
+                      </div>`
+                    }
+                })
+            })
+
+        function getBase64Image(img) {
+            var canvas = document.createElement("canvas");
+            canvas.width = img.width;
+            canvas.height = img.height;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0);
+            var dataURL = canvas.toDataURL("image/*");
+            return dataURL.replace(/^data:image\/?[A-z]*;base64,/);
+        }
+
+
+        var imageUrl = '';
+        const fileInput = document.getElementById('menuItemImage');
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                imageUrl = reader.result
+            };
+            reader.readAsDataURL(file);
+        });
+
+        function addMemuItem() {
+            const title = document.getElementById('menuItemName').value
+            const price = document.getElementById('menuItemPrice').value
+            if (title === '' || price === '' || imageUrl === '' ) {
+                return
+            }
+            db.collection('menu').doc().set({
+                "image": imageUrl,
+                "Name": title,
+                "price": price,
+                "category": category,
+                "visibility": "visible"
+            }).then(() => {
+                window.location.replace('')
+            })
+        }
+
+
+        function updateItem(id) {
+            db.collection('menu').doc(id.id).update({
+                'visibility': 'hidden'
+            }).then(() => {
+                window.location.replace('')
+            })
+        }
+
+        function showItem(id) {
+            db.collection('menu').doc(id.id).update({
+                'visibility': 'visible'
+            }).then(() => {
+                window.location.replace('')
+            })
+        }
+
+        function deleteMenuItem(id) {
+            db.collection('menu').doc(id.id).delete()
+                .then((res) => { alert('Menu Item Deleted Successfully'); window.location.reload('') })
+        }
+
+
+    </script>
+</body>
+
+</html>
