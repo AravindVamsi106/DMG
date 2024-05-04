@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DRG - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/.png" rel="icon">
+  <link href="assets/img/.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>NFC</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div
+          class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
+          <!-- <p data-aos="fade-up" data-aos-delay="100"></p> -->
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#menu" class="btn-book-a-table">View Menu</a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pie Chart</h5>
+              <!-- Pie Chart -->
+              <div id="pieChart" style="min-height: 350px;" class="echart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>Check Our <span>Yummy Menu</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Starters</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Soups</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>Main Course</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+              <h4>Desserts</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Starters</h3>
+            </div>
+
+            <div class="row gy-5" id="starters-row">
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Soups</h3>
+            </div>
+
+            <div class="row gy-5" id="breakfast-row">
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Main-Course</h3>
+            </div>
+
+            <div class="row gy-5" id="lunch-row">
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Desserts</h3>
+            </div>
+
+            <div class="row gy-5" id="dinner-row">
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-lg-12 d-flex justify-content-center">
+          <i class="fa fa-shopping-cart fa-3x"><span class="fa-stack has-badge my-cart-badge"></i></span>
+          <div class="">
+            <br>
+            <button class="btn btn-danger my-cart-icon">View Order</button>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section><!-- End Menu Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              RGUKT <br>
+              Nuzvid, Krishna 521202 - India<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +91 93987 97029 <br>
+              <strong>Email:</strong> aravindvamsee106@gmail.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 11PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Social</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="assets/js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      33.
+      var goToCartIcon = function ($addTocartBtn) {
+        var $cartIcon = $(".my-cart-icon");
+        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+        $addTocartBtn.prepend($image);
+        var position = $cartIcon.position();
+        $image.animate({
+          top: position.top,
+          left: position.left
+        }, 500, "linear", function () {
+          $image.remove();
+        });
+      }
+
+      $('.my-cart-btn').myCart({
+        currencySymbol: '₹',
+        classCartIcon: 'my-cart-icon',
+        classCartBadge: 'my-cart-badge',
+        classProductQuantity: 'my-product-quantity',
+        classProductRemove: 'my-product-remove',
+        classCheckoutCart: 'my-cart-checkout',
+        affixCartIcon: true,
+        showCheckoutModal: true,
+        numberOfDecimals: 2,
+        cartItems: [
+          {}
+        ],
+        clickOnAddToCart: function ($addTocart) {
+          goToCartIcon($addTocart);
+        },
+        // afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        //   console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+        // },
+        // clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        //   console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+        // },
+        checkoutCart: function (products, totalPrice, totalQuantity) {
+          // alert(checkoutString)
+          // console.log("checking out", products, totalPrice, totalQuantity);
+          placeOrder(products, totalPrice, totalQuantity)
+        },
+      });
+
+      $("#addNewProduct").click(function (event) {
+        var currentElementNo = $(".row").children().length + 1;
+        $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+      });
+    });
+  </script>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics --(f)>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-storage.js"></script>
+  <script>
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCs8GhWqtz2F5Y5kmyivvca6oRZ8TlPss8",
+      authDomain: "dmgv1-46c19.firebaseapp.com",
+      projectId: "dmgv1-46c19",
+      storageBucket: "dmgv1-46c19.appspot.com",
+      messagingSenderId: "713057400438",
+      appId: "1:713057400438:web:54d6269561ab92c436d157",
+      measurementId: "G-3QL0L5WQ73"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()
+    const starterstab = document.getElementById('starters-row')
+    const breakfasttab = document.getElementById('breakfast-row')
+    const lunchtab = document.getElementById('lunch-row')
+    const dinnerstab = document.getElementById('dinner-row')
+    db.collection('menu').where('category', '==', 'Starters').get()
+      .then((querySnapshot) => {
+        const starters = querySnapshot.docs.map((doc) => {
+          if (doc.data().visibility == 'visible') {
+            starterstab.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+            <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4>${doc.data().Name}</h4>
+            <button class="btn bg-transparent my-cart-btn" id="${doc.id}" data-id="Starters-${doc.id}"
+                  data-name="${doc.data().Name}" data-price="${doc.data().price}" data-quantity="1"
+                  data-image="${doc.data().image}">
+                  <i class="fa fa-plus-circle fa-2x"></i></button>
+                <p class="price">
+                  ₹ ${doc.data().price}/-
+                </p>
+              </div>`
+          }
+        })
+      })
+    db.collection('menu').where('category', '==', 'soups').get()
+      .then((querySnapshot) => {
+        const soups = querySnapshot.docs.map((doc) => {
+          if (doc.data().visibility == 'visible') {
+            breakfasttab.innerHTML +=
+              `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+            <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4>${doc.data().Name}</h4>
+            <button class="btn bg-transparent my-cart-btn" id="${doc.id}" data-id="soups-${doc.id}"
+                  data-name="${doc.data().Name}" data-price="${doc.data().price}" data-quantity="1"
+                  data-image="${doc.data().image}">
+                  <i class="fa fa-plus-circle fa-2x"></i></button>
+                <p class="price">
+                  ₹ ${doc.data().price}/-
+                </p>
+              </div>`
+          }
+        })
+      })
+    db.collection('menu').where('category', '==', 'lunch').get()
+      .then((querySnapshot) => {
+        const lunch = querySnapshot.docs.map((doc) => {
+          if (doc.data().visibility == 'visible') {
+            lunchtab.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+            <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4>${doc.data().Name}</h4>
+            <button class="btn bg-transparent my-cart-btn" id="${doc.id}" data-id="lunch-${doc.id}"
+                  data-name="${doc.data().Name}" data-price="${doc.data().price}" data-quantity="1"
+                  data-image="${doc.data().image}">
+                  <i class="fa fa-plus-circle fa-2x"></i></button>
+                <p class="price">
+                  ₹ ${doc.data().price}/-
+                </p>
+              </div>`
+          }
+        })
+      })
+    db.collection('menu').where('category', '==', 'dessert').get()
+      .then((querySnapshot) => {
+        const dinners = querySnapshot.docs.map((doc) => {
+          if (doc.data().visibility == 'visible') {
+            dinnerstab.innerHTML += `<div class="col-lg-4 menu-item"><a href="${doc.data().image}" class="glightbox">
+            <img src="${doc.data().image}" class="menu-img img-fluid" alt="" style="height:150px;"></a><h4>${doc.data().Name}</h4>
+            <button class="btn bg-transparent my-cart-btn" id="${doc.id}" data-id="dessert-${doc.id}"
+                  data-name="${doc.data().Name}" data-price="${doc.data().price}" data-quantity="1"
+                  data-image="${doc.data().image}">
+                  <i class="fa fa-plus-circle fa-2x"></i></button>
+                <p class="price">
+                  ₹ ${doc.data().price}/-
+                </p>
+              </div>`
+          }
+        })
+      })
+
+    function placeOrder(products, totalPrice, quantity) {
+      const orderId = Math.floor(Math.random() * 100000).toString()
+      db.collection('orders').doc(orderId).set({
+        "products": products,
+        "totalPrice": totalPrice,
+        "quantity": quantity,
+      }).then((res) => {
+        alert('Order placed successfully')
+        window.location.replace('feedback.html')
+        localStorage.removeItem('currentOrderId')
+        localStorage.setItem('currentOrderId', orderId)
+      })
+    }
+
+    async function fetch() {
+      const res = await db.collection("feedback").get()
+      return res
+    }
+
+    async function main() {
+      var ratings = []
+      const res = await fetch()
+      res.docs.map((doc) => {
+        ratings.push(doc.data().ratings)
+      })
+      var data = []
+      ratings.map((rating, i) => {
+        rating.map((r) => data.push({ value: r.rating, name: r.category }))
+      })
+      let dessert = []
+      let soups = []
+      let lunch = []
+      let starters = []
+      data.map((d) => {
+        if (d.name == 'Starters') {
+          starters.push(d)
+        }
+        if (d.name == 'soups') {
+          soups.push(d)
+        }
+        if (d.name == 'lunch') {
+          lunch.push(d)
+        }
+        if (d.name == 'dessert') {
+          dessert.push(d)
+        }
+      })
+      let dessertMap = {}
+      let soupsMap = {}
+      let lunchMap = {}
+      let startersMap = {}
+      dessert.map((d) => {
+        dessertMap['value'] = parseInt(dessertMap['value'] != undefined ? dessertMap['value'] : 0) + parseInt(d.value)
+      })
+      
+      dessertMap['name'] = 'dessert'
+      dessertMap['value'] = dessert.length == 0 ? 0 : dessertMap['value'] == 0 ? 0 : dessertMap['value'] / dessert.length
+
+      soups.map((d) => {
+        soupsMap['value'] = parseInt(soupsMap['value'] != undefined ? soupsMap['value'] : 0) + parseInt(d.value)
+      })
+      soupsMap['name'] = 'soups'
+      soupsMap['value'] = soups.length == 0 ? 0 : soupsMap['value'] / soups.length
+
+      lunch.map((d) => {
+        lunchMap['value'] = parseInt(lunchMap['value'] != undefined ? lunchMap['value'] : 0) + parseInt(d.value)
+      })
+      lunchMap['name'] = 'Main Course'
+      lunchMap['value'] = lunch.length == 0 ? 0 : lunchMap['value'] == 0 ? 0 : lunchMap['value'] / lunch.length
+
+      starters.map((d) => {
+        startersMap['value'] = parseInt(startersMap['value'] != undefined ? startersMap['value'] : 0) + parseInt(d.value)
+      })
+      startersMap['name'] = 'Starters'
+      startersMap['value'] = starters.length == 0 ? 0 : startersMap['value'] / starters.length
+
+      let totalData = []
+      if (startersMap['value'] > 0) {
+        totalData.push(startersMap)
+      }
+      if (lunchMap['value'] > 0) {
+        totalData.push(lunchMap)
+      }
+      if (dessertMap['value'] > 0) {
+        totalData.push(dessertMap)
+      }
+      if (soupsMap['value'] > 0) {
+        totalData.push(soupsMap)
+      }
+
+      echarts.init(document.querySelector("#pieChart")).setOption({
+        tooltip: {
+          trigger: 'item'
+        },
+        legend: {
+          orient: 'vertical',
+          left: 'left'
+        },
+        series: [{
+          name: 'Ratings',
+          type: 'pie',
+          radius: '50%',
+          data: totalData,
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        }]
+      });
+    }
+
+
+
+    document.addEventListener("DOMContentLoaded", main);
+  </script>
+</body>
+
+</html>
