@@ -1,13 +1,7 @@
 # DMG
 
-
-That sounds like a comprehensive and efficient system! Here's a refined version for your README file:
-
----
-
-**Dynamic QR Based Menu Generator (DMG)**
-
 **Introduction:**
+
 The Dynamic QR Based Menu Generator (DMG) is a web application tailored to modernize menu management for restaurants and cafes in today's digital era. It offers an intuitive platform for admins to seamlessly update menus based on item availability in the kitchen. Customers can conveniently access the updated menu by scanning the QR code placed on their table, ensuring they only view currently available items.
 
 **Key Features:**
@@ -29,6 +23,7 @@ However , I have uploaded only the demo version of this . I haven't included any
 Steps:
 
 1. Download and extract the data from the zip file
-2. In the main folder there will be a qr code png associated to the customer web-page / menu page
-3. scan it , it will redirect to the web page directly or in the User folder you can find the index.html file . if you click on it it will redirect to the menu page designed for the customer.
-4. In Admin folder 
+2. Navigate to the main folder of the extracted files. Here, you'll find a QR code PNG file associated with the customer web page or menu page. Use a QR code scanner on your smartphone or device to scan the QR code. This will directly redirect you to the customer web page or menu page.
+   (or)
+Navigate to the "User" folder and locate the "index.html" file. Clicking on it will redirect you to the menu page designed for the customer.
+3. To access the admin dashboard, navigate to the "Admin/dashboard" folder within the extracted files. Here, you'll find an "index.html" file. Opening this file will redirect you to the admin page. From here, you can perform various tasks such as updating, deleting, or adding new items to the menu.
